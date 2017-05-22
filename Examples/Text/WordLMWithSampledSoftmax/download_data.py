@@ -7,7 +7,11 @@
 # This program downloads training, validation and test data and creates additional files 
 # with token-ids and frequencies.
 
-import urllib.request, os, sys, tarfile, operator
+import os, sys, tarfile, operator
+try:
+    from urllib.request import urlretrieve
+except ImportError:
+    from urllib import urlretrieve
 
 # accumulate word counts in dictionary
 def add_to_count(word, word2Count):
@@ -96,7 +100,7 @@ if __name__=='__main__':
     tmpGz = "tmp.tgz"
     if not os.path.isfile(tmpGz):
         print("downloading " + url + " to " + tmpGz)
-        urllib.request.urlretrieve(url, tmpGz)
+        urlretrieve(url, tmpGz)
 
     # extracting the files we need from the tarfile
     fileReader=tarfile.open(tmpGz, 'r') 
