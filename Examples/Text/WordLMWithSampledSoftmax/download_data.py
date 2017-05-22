@@ -12,6 +12,7 @@ try:
     from urllib.request import urlretrieve
 except ImportError:
     from urllib import urlretrieve
+from io import open
 
 # accumulate word counts in dictionary
 def add_to_count(word, word2Count):
