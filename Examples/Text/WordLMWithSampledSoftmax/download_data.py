@@ -44,9 +44,9 @@ def write_vocab_and_frequencies(word2count, vocab_file_path, freq_file_path, wor
     id=int(0)
     for word, freq in sorted_entries:
         vocab_file.write(word+"\n")
-        freq_file.write("%i\n" % freq)
-        word2count_file.writelines("%s\t%i\n" % (word, freq))
-        word2id_file.writelines("%s\t%i\n" % (word, id))
+        freq_file.write(u"%i\n" % freq)
+        word2count_file.writelines(u"%s\t%i\n" % (word, freq))
+        word2id_file.writelines(u"%s\t%i\n" % (word, id))
         id +=1
 
     #close the files
