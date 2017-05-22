@@ -88,6 +88,8 @@ class Paths(object):
 
 if __name__=='__main__':
 
+    os.chdir(os.path.abspath(os.path.dirname(__file__)))
+
     # downloading the data
     url ="http://www.fit.vutbr.cz/~imikolov/rnnlm/simple-examples.tgz"
 
