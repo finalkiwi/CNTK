@@ -3,12 +3,12 @@
 cd ../../..
 
 downloaders=(
-  Examples/Image/DataSets/Animals/install_animals.py
-  Examples/Image/DataSets/CIFAR-10/install_cifar10.py
-  Examples/Image/DataSets/Flowers/install_flowers.py
-  Examples/Image/DataSets/Grocery/install_grocery.py
-  Examples/Image/DataSets/MNIST/install_mnist.py
-  Examples/Image/DataSets/Pascal/install_pascalvoc.py
+  #Examples/Image/DataSets/Animals/install_animals.py
+  #Examples/Image/DataSets/CIFAR-10/install_cifar10.py
+  #Examples/Image/DataSets/Flowers/install_flowers.py
+  #Examples/Image/DataSets/Grocery/install_grocery.py
+  #Examples/Image/DataSets/MNIST/install_mnist.py
+  #Examples/Image/DataSets/Pascal/install_pascalvoc.py
   Examples/Text/WordLMWithSampledSoftmax/download_data.py
   Examples/Video/DataSets/UCF11/ucf11_utils.py
 )
